@@ -73,7 +73,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>tlsdemoapp</finalName>
+		<finalName>SecuredTLSDemoApp</finalName>
 	</build>
 
 </project>
