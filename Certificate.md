@@ -21,11 +21,11 @@ openssl genrsa -out cert-key.pem 4096
 ```
 2. Create a Certificate Signing Request (CSR)
 ```bash
-openssl req -new -sha256 -subj "/CN=yourcn" -key cert-key.pem -out cert.csr
+openssl req -new -sha256 -subj "/CN=lunchandlearn" -key cert-key.pem -out cert.csr
 ```
 3. Create a `extfile` with all the alternative names
 ```bash
-echo "subjectAltName=DNS:your-dns.record,IP:257.10.10.1" >> extfile.cnf
+echo "subjectAltName=DNS:localhost,DNS:lunchandlearn,IP:192.168.10.226,IP:195.128.241.43" >> extfile.cnf
 ```
 ```bash
 # optional
